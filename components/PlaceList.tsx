@@ -8,7 +8,7 @@ interface PlaceListProps {
   placeList: any[];
 }
 
-const ITEMS_PER_PAGE = 16;
+const ITEMS_PER_PAGE = 12;
 
 const PlaceList: React.FC<PlaceListProps> = ({ placeList }) => {
   const [selectedPlace, setSelectedPlace] = useState<any>([]);
@@ -53,7 +53,7 @@ const PlaceList: React.FC<PlaceListProps> = ({ placeList }) => {
           <SideDrawer place={selectedPlace} close={() => setSelectedPlace([])} />
         </div>
       )}
-      <div className='flex justify-center items-center mt-4'>
+      <div className='flex justify-center items-center mt-10 mb-10'>
         <button
           onClick={handlePrevPage}
           disabled={currentPage === 1}
@@ -61,7 +61,7 @@ const PlaceList: React.FC<PlaceListProps> = ({ placeList }) => {
         >
           <FaChevronLeft size={24} />
         </button>
-        <span className='mx-4'>
+        <span className='mx-4 '>
           Page {currentPage} of {totalPages}
         </span>
         <button

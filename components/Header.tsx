@@ -9,8 +9,9 @@ const Header = () => {
           <div className="text-3xl transition-transform transform hover:scale-110 hover:text-teal-500">
             <FaMapPin />
           </div>
-          <h1 className="text-4xl font-bold tracking-tight transition-transform transform hover:scale-110 hover:text-teal-500">
-            FindMe
+          <h1 className="text-4xl font-bold tracking-tight transition-transform transform hover:scale-110">
+            <span className="text-teal-500 ">Find</span>
+            <span className="text-white hover:text-teal-500">Me</span>
           </h1>
         </div>
         <nav>
